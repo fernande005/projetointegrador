@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .conteiner{
+            width: 60%;
+            margin: auto;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 30px;
+            background-color: #685547;
+            border-radius: 20px;
+            opacity: 0.7;
+            margin-top: 200px;
+        }
+        .fundo{
+            background-color: #582a06;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #64340f;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .h1{
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo"></div>
+
+<div class="conteiner">
+    <div class="h1"> Fale conosco</div>
+</h1>
+<form method="post" action="#">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    <label for="data_nascimento">Data de Nascimento</label>
+    <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+    <label for="telefone">Telefone</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+</form>
+<br>
+<button type="submit">Enviar dados</button>
+</div> 
+
+</div>
+
+        
+        
+
+    </body>
+</body>
+</html>

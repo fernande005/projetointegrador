@@ -1,71 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="pt-br">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entre em contato</title>
+    <title>Fale Conosco</title>
     <style>
-         body {
-      font-family: 'Georgia', serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f5e6d3; /* Fundo cor terracota */
-      min-height: 100%;
-      box-sizing: border-box;
-      padding-top: 50px;
-      padding-bottom: 50px; /* Espaço para evitar encostar em cima/baixo */
-    }
-    .Menu{
-      background: #e0c4a8; /* Paleta terrosa */
-      padding: 30px; /* Espaço interno maior */
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      width: 100%;
-      max-width: 500px;
-      border: 2px solid #d1a684; /* Detalhe arquitetônico */
-    }
-    .Menu-centro h2 {
-      margin-bottom: 20px;
-      font-size: 26px;
-      color: #6d4c41; /* Tom de marrom escuro */
-      text-align: center;
-    }
-    .titulos{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-size: 18px;
-        color: #6d4c41;
-        font-weight: bold;
-        border-bottom: 1px solid #d1a684;
-        padding-bottom: 5px;
-    }
-    .contatos-1{
-        background-color: #a88b73;
-      color: #fff;
-      border: none;
-      padding: 12px 15px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-      font-family: 'Georgia', serif;
-    }
-    .contatos-2 button:hover {
-      background-color: #6d4c41;
-    }
-    .Rodapé-contatos footer {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #6d4c41;
-      /*roda pé*/
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7c4028ce;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 40%;
+            padding: 20px;
+            background-color: brown;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #d1a684;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #b07a5c;
+        }
     </style>
 </head>
 <body>
-  <div class="body"></div>
-  <div class="menu">REgistre seus dados aqui</div>
+    <div class="container">
+        <h1>Fale Conosco</h1>
+        <form method="post" action="#">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            
+            <label for="data_nascimento">Data de Nascimento</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            
+            <button type="submit">Enviar Dados</button>
+        </form>
+    </div>
 </body>
 </html>
